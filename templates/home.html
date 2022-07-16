@@ -1,0 +1,23 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keeru Chan</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+</head>
+<body>
+    <div class="jumbotron container">
+        <h1 class="display-4">Hello, Keeru!</h1>
+        <p class="lead">I made my first shity django project which is a lame student list</p>
+        <hr class="my-4">
+        <p>I am a student of the University of Applied Sciences in Salzburg</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="{% url 'student_list' %}" role="button">Student List</a>
+        </p>
+      </div>
+</body>
+</html>
